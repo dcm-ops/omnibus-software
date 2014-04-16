@@ -18,11 +18,11 @@
 name "chef-gem"
 default_version "11.12.2"
 
-version "11.10.4"
+version "11.12.2"
 
 dependency "ruby"
 dependency "rubygems"
 
 build do
-  gem "install chef -n #{install_dir}/embedded/bin --no-rdoc --no-ri -v #{version}"
+  gem "install chef -n #{install_dir}/bin --no-rdoc --no-ri -v #{version}"
 end
